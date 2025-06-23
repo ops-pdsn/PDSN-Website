@@ -15,7 +15,7 @@ export default function About() {
         {/* Hero Section */}
         <section className="relative h-96">
           <Image
-            src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-hero.webp"
+            src="/images/about-hero.webp"
             alt="Our Team"
             fill
             className="object-cover"
@@ -78,7 +78,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               <Image
-                src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-story.webp"
+                src="/images/about-story.webp"
                 alt="Our Workplace"
                 fill
                 className="object-cover object-[100%_0%]"
@@ -231,7 +231,7 @@ export default function About() {
                   >
                     <div className="relative h-80">
                       <Image
-                        src={["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/team/ceo-sanchit.webp", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/team/cfo-dheeraj.webp"][idx]}
+                        src={["/team/ceo-sanchit.webp", "/team/cfo-dheeraj.webp"][idx]}
                         alt={name}
                         fill
                         className="object-cover"

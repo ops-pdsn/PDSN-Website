@@ -9,7 +9,7 @@ const testimonials = [
     id: 1,
     name: "Laser Technologies",
     company: "Laser Technologies",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/logos/LaserT.webp",
+    image: "/logos/LaserT.webp",
     message:
       "PDSN Media Agency provided tailored solutions that were exactly what we needed, bringing fresh ideas that truly elevated the outcome. Their commitment to quality and reliability made a significant impact on our projects, making the entire experience seamless and highly effective.",
   },
@@ -17,7 +17,7 @@ const testimonials = [
     id: 2,
     name: "Diamond Protech",
     company: "Diamond Protech",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/logos/DP.webp",
+    image: "/logos/DP.webp",
     message:
       "PDSN Media Agency's innovative solutions transformed our content, bringing a level of creativity and expertise that made a significant impact. Their collaborative spirit and dedication to quality made the entire process both enjoyable and successful. We highly recommend them for content services.",
   },
@@ -25,7 +25,7 @@ const testimonials = [
     id: 3,
     name: "Borosil",
     company: "Borosil",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/logos/Borosil.webp",
+    image: "/logos/Borosil.webp",
     message:
       "The creative digi greetings made by PDSN has helped us connect with our customers in a more personalized and meaningful way. The result was exactly what we wanted, so would recommend them for brand-tailored creative solutions.",
   },
@@ -33,7 +33,7 @@ const testimonials = [
     id: 4,
     name: "Ajanta Pharma",
     company: "Ajanta Pharma",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/logos/Ajanta Pharma.webp",
+    image: "/logos/Ajanta Pharma.webp",
     message:
       "Working with PDSN was incredibly smooth. They delivered captivating DOOH content that caught everyone’s attention. Absolutely impressed by their professionalism and the final outcome!",
   },

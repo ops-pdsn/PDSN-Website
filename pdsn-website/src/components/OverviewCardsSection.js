@@ -54,7 +54,7 @@ const features = [
     title: "Digi-Media",
     description: "We create impact that converts — turning scrolls into sales.",
     icon: "stat-ico",
-    link: "/",
+    link: "/digimedia",
   },
 ];
 

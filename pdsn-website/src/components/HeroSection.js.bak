@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0 z-[-1]">
         <Image
-          src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/hero-bg3.webp"
+          src="/images/hero-bg3.webp"
           alt=""
           fill
           className="object-cover custom-blur-10"

@@ -14,7 +14,7 @@ export default function VisionVisible() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center text-white overflow-hidden">
         <Image
-          src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/vision-visible-hero.webp"
+          src="/images/vision-visible-hero.webp"
           alt="Vision Visible Hero"
           fill
           className="object-cover"
@@ -80,7 +80,7 @@ export default function VisionVisible() {
               onContextMenu={(e) => e.preventDefault()} // <-- THIS LINE BLOCKS RIGHT CLICK
             >
               <video
-                src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/vision-visible.webm"
+                src="/videos/vision-visible.webm"
                 autoPlay
                 loop
                 muted
@@ -89,7 +89,7 @@ export default function VisionVisible() {
                 disablePictureInPicture
                 disableRemotePlayback
                 className="object-cover w-full h-full pointer-events-auto"
-                poster="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/video-poster.webp"
+                poster="/images/video-poster.webp"
                 preload="none"
               />
             </div>

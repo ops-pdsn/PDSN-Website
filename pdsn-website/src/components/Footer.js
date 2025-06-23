@@ -64,8 +64,10 @@ export default function Footer() {
                 <ul className="absolute left-0 top-full mt-2 w-56 overflow-hidden rounded-md bg-white text-gray-800 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
                   {[
                     { label: 'DOOH', href: '/programmatic-dooh' },
+                    { label: 'Digi-Media', href: '/digimedia' },
                     { label: 'Content Creation', href: '/content-creation' },
-                    { label: 'Hyperlocal Marketing', href: '/hyperlocal-marketing' },
+                    { label: 'Hyperlocal Marketing', href: '/hyperlocal-marketing' }
+
                   ].map(({ label, href }) => (
                     <li key={href}>
                       <Link

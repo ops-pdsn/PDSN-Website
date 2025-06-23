@@ -45,7 +45,7 @@ export default function Contact() {
       <section className="relative h-72 flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <Image
-          src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-hero.webp" // Replace with your actual image path
+          src="/images/about-hero.webp" // Replace with your actual image path
           alt="Contact Background"
           fill
           className="object-cover object-center z-[-2]"

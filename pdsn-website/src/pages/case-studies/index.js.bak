@@ -9,17 +9,9 @@ import Footer from "@/components/Footer";
 
 const caseStudiesData = [
   {
-    title: "The New India Assurance – Head Office",
-    slug: "nia",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/nia_case_study.webp",
-    summary: "A-Frame Digital Standees and Wall-Mounted Digital Screen",
-    result: " 🎯 Impactful Results",
-    category: "DOOH"
-  },
-  {
     title: "Cosmos × IMTEX 2025",
     slug: "cosmos-imtex-2025",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/cosmos.webp",
+    image: "/images/case-studies/cosmos.webp",
     summary: "L-shaped anamorphic LED screen brought engineering to life in 3D.",
     result: "🚀 Showstopper at IMTEX 2025",
     category: "Technology"
@@ -27,7 +19,7 @@ const caseStudiesData = [
   {
     title: "Ajanta Pharma × Yashobhoomi",
     slug: "ajanta-pharma",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/ajanta.webp",
+    image: "/images/case-studies/ajanta.webp",
     summary: "Immersive 3D illusion campaign turning heads at a pharma summit.",
     result: "✨ Premium brand experience",
     category: "Healthcare"
@@ -35,7 +27,7 @@ const caseStudiesData = [
   {
     title: "NBC Bearings × Multi-Vehicle Showcase",
     slug: "nbc-bearings",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/nbc.webp",
+    image: "/images/case-studies/nbc.webp",
     summary: "Cross-industry 3D narrative showcasing bearings in motion.",
     result: "🏆 Tech + storytelling fusion",
     category: "Automotive"
@@ -43,7 +35,7 @@ const caseStudiesData = [
   {
     title: "Bank of India × Tata Marathon",
     slug: "bank-of-india",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/BOI.webp",
+    image: "/images/case-studies/BOI.webp",
     summary: "Emotive corporate film captured during India’s biggest marathon.",
     result: "🎥 Powerful internal branding",
     category: "Finance"
@@ -51,7 +43,7 @@ const caseStudiesData = [
   {
     title: "Agrasen × Detroit Airport",
     slug: "agrasen",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/agrasen.webp",
+    image: "/images/case-studies/agrasen.webp",
     summary: "U.S. airport DOOH placements for global visibility.",
     result: "🌎 Cross-border brand push",
     category: "Industrial"
@@ -59,7 +51,7 @@ const caseStudiesData = [
   {
     title: "Solution One ERP × Pin-Code Targeting",
     slug: "solution-one-erp",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/solutionone.webp",
+    image: "/images/case-studies/solutionone.webp",
     summary: "Precision media in Pune’s Bhosari industrial belt.",
     result: "🎯 Laser-targeted impressions",
     category: "Technology"
@@ -85,7 +77,7 @@ export default function CaseStudiesPage() {
         {/* Hero Section with Background Image + Gradient Overlay */}
         <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
           <Image
-            src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-hero.webp"
+            src="/images/about-hero.webp"
             alt="Case Studies Hero"
             layout="fill"
             objectFit="cover"

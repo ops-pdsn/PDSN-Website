@@ -41,7 +41,7 @@ export default function HyperlocalMarketingPage() {
         {/* Hero */}
         <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
           <Image
-            src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-hero.webp"
+            src="/images/about-hero.webp"
             alt="Hyperlocal Hero"
             layout="fill"
             objectFit="cover"
@@ -79,7 +79,7 @@ export default function HyperlocalMarketingPage() {
 
             <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="flex items-center justify-center">
               <Image
-                src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/hyperlocalbanner.webp"
+                src="/images/hyperlocalbanner.webp"
                 alt="Hyperlocal Marketing Coverage Map"
                 width={600}
                 height={400}

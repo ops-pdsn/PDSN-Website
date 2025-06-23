@@ -15,7 +15,7 @@ export default function BlogIndex() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-16">
 
         <Image
-          src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-hero.webp"
+          src="/images/about-hero.webp"
           alt="Blog Hero"
           layout="fill"
           objectFit="cover"

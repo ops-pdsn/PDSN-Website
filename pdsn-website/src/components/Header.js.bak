@@ -32,7 +32,7 @@ const Navbar = () => {
           {/* logo */}
           <Link href="/" className="flex min-w-max items-center gap-2.5 no-underline">
             <Image
-              src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/logopdsn.webp"
+              src="/images/logopdsn.webp"
               alt="PDSN logo"
               width={100}
               height={100}
@@ -58,8 +58,8 @@ const Navbar = () => {
                   <Link
                     href={href}
                     className={`py-2.5 transition duration-300 ${isActive(href)
-                      ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
-                      : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#00acd7] hover:to-[#341f9b] hover:bg-clip-text hover:text-transparent'
+                        ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
+                        : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#00acd7] hover:to-[#341f9b] hover:bg-clip-text hover:text-transparent'
                       }`}
                   >
                     {label}
@@ -71,8 +71,8 @@ const Navbar = () => {
               <li className="relative group select-none">
                 <span
                   className={`cursor-pointer py-2.5 transition ${isActive('/programmatic-dooh')
-                    ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
-                    : 'text-gray-700 group-hover:bg-gradient-to-r group-hover:from-[#00acd7] group-hover:to-[#341f9b] group-hover:bg-clip-text group-hover:text-transparent'
+                      ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
+                      : 'text-gray-700 group-hover:bg-gradient-to-r group-hover:from-[#00acd7] group-hover:to-[#341f9b] group-hover:bg-clip-text group-hover:text-transparent'
                     }`}
                 >
                   Services
@@ -81,17 +81,15 @@ const Navbar = () => {
                 <ul className="invisible absolute left-0 top-full mt-2 w-52 overflow-hidden rounded-md bg-white shadow-lg opacity-0 transition-opacity group-hover:visible group-hover:opacity-100 z-50">
                   {[
                     { label: 'DOOH', href: '/programmatic-dooh' },
-                    { label: 'Digi-Media', href: '/digimedia' },
                     { label: 'Content Creation', href: '/content-creation' },
                     { label: 'Hyperlocal Marketing', href: '/hyperlocal-marketing' }
-
                   ].map(({ label, href }) => (
                     <li key={href}>
                       <Link
                         href={href}
                         className={`block px-4 py-2 text-sm transition ${isActive(href)
-                          ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
-                          : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#00acd7] hover:to-[#341f9b] hover:bg-clip-text hover:text-transparent'
+                            ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
+                            : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#00acd7] hover:to-[#341f9b] hover:bg-clip-text hover:text-transparent'
                           }`}
                       >
                         {label}
@@ -110,8 +108,8 @@ const Navbar = () => {
                   <Link
                     href={href}
                     className={`py-2.5 transition duration-300 ${isActive(href)
-                      ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
-                      : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#00acd7] hover:to-[#341f9b] hover:bg-clip-text hover:text-transparent'
+                        ? 'bg-gradient-to-r from-[#00acd7] to-[#341f9b] bg-clip-text text-transparent'
+                        : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#00acd7] hover:to-[#341f9b] hover:bg-clip-text hover:text-transparent'
                       }`}
                   >
                     {label}

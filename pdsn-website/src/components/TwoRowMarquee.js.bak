@@ -4,29 +4,29 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 
 const topRowImages = [
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (1).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (11).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (2).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (12).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (3).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (13).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (4).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (14).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (5).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (20).webp",
+  "/images/image (1).webp",
+  "/images/image (11).webp",
+  "/images/image (2).webp",
+  "/images/image (12).webp",
+  "/images/image (3).webp",
+  "/images/image (13).webp",
+  "/images/image (4).webp",
+  "/images/image (14).webp",
+  "/images/image (5).webp",
+  "/images/image (20).webp",
 ]
 
 const bottomRowImages = [
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (15).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (6).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (16).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (7).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (17).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (8).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (18).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/outdoor.webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (19).webp",
-  "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (21).webp",
+  "/images/image (15).webp",
+  "/images/image (6).webp",
+  "/images/image (16).webp",
+  "/images/image (7).webp",
+  "/images/image (17).webp",
+  "/images/image (8).webp",
+  "/images/image (18).webp",
+  "/images/outdoor.webp",
+  "/images/image (19).webp",
+  "/images/image (21).webp",
 ]
 
 export default function TwoRowMarquee() {

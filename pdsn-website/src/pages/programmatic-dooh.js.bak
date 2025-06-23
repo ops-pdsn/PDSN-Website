@@ -10,7 +10,7 @@ const caseStudiesData = [
   {
     title: "Cosmos × IMTEX 2025",
     slug: "cosmos-imtex-2025",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/cosmos.webp",
+    image: "/images/case-studies/cosmos.webp",
     summary: "L-shaped anamorphic LED screen brought engineering to life in 3D.",
     result: "🚀 Showstopper at IMTEX 2025",
     category: "Technology"
@@ -18,7 +18,7 @@ const caseStudiesData = [
   {
     title: "Ajanta Pharma × Yashobhoomi",
     slug: "ajanta-pharma",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/ajanta.webp",
+    image: "/images/case-studies/ajanta.webp",
     summary: "Immersive 3D illusion campaign turning heads at a pharma summit.",
     result: "✨ Premium brand experience",
     category: "Healthcare"
@@ -26,7 +26,7 @@ const caseStudiesData = [
   {
     title: "NBC Bearings × Multi-Vehicle Showcase",
     slug: "nbc-bearings",
-    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/nbc.webp",
+    image: "/images/case-studies/nbc.webp",
     summary: "Cross-industry 3D narrative showcasing bearings in motion.",
     result: "🏆 Tech + storytelling fusion",
     category: "Automotive"
@@ -42,7 +42,7 @@ export default function ProgrammaticDoohPage() {
         {/* Hero Section with Image + Gradient Overlay */}
         <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
           <Image
-            src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/about-hero.webp"
+            src="/images/about-hero.webp"
             alt="DOOH Hero"
             layout="fill"
             objectFit="cover"
@@ -116,10 +116,10 @@ export default function ProgrammaticDoohPage() {
             </p>
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { label: "CORPORATE", image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/coporate1.webp", objectPosition: "object-top" },
-                { label: "CAFES", image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (9).webp", objectPosition: "[object-position:50%_50%]" },
-                { label: "OUTDOOR", image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/outdoor2.webp", objectPosition: "object-bottom" },
-                { label: "TRANSIT", image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (12).webp", objectPosition: "[object-position:70%_30%]" }, // custom
+                { label: "CORPORATE", image: "/images/image (11).webp", objectPosition: "object-top" },
+                { label: "CAFES", image: "/images/image (6).webp", objectPosition: "[object-position:70%_30%]" },
+                { label: "OUTDOOR", image: "/images/outdoor1.webp", objectPosition: "object-bottom" },
+                { label: "TRANSIT", image: "/assets/transit1.webp", objectPosition: "[object-position:70%_30%]" }, // custom
               ].map((item, idx) => (
                 <div key={idx} className="relative rounded-xl overflow-hidden shadow-lg">
                   <Image
@@ -158,7 +158,7 @@ export default function ProgrammaticDoohPage() {
             </div>
             <div>
               <Image
-                src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/programmatic-benefits.webp"
+                src="/images/programmatic-benefits.webp"
                 alt="DOOH Benefits"
                 width={500}
                 height={350}
@@ -186,12 +186,12 @@ export default function ProgrammaticDoohPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {[
-                'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (15).webp',
-                'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (2).webp',
-                'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (3).webp',
-                'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (4).webp',
-                'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (5).webp',
-                'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/outdoor.webp',
+                '/images/image (15).webp',
+                '/images/image (2).webp',
+                '/images/image (3).webp',
+                '/images/image (4).webp',
+                '/images/image (5).webp',
+                '/images/outdoor.webp',
               ].map((src, index) => (
                 <motion.div
                   key={index}

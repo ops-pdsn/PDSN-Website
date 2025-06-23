@@ -27,7 +27,7 @@ const serviceBlocks = [
     description: "High‑energy visuals for advertisements, product videos, and DOOH campaigns.",
     brief: "Dynamic animated graphics that communicate your brand's story with energy and flair.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/motion1.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/motion2.webm"]
+    media: ["/videos/motion1.webm", "/videos/motion2.webm"]
   },
   {
     title: "2D & 3D Animation",
@@ -35,7 +35,7 @@ const serviceBlocks = [
     description: "Storytelling through dimensional visuals for all platforms.",
     brief: "Bring characters, ideas, and concepts to life with captivating animation in two or three dimensions.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/2Danimation.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/3Danimation3.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/3Danimation.webm"]
+    media: ["/videos/2Danimation.webm", "/videos/3Danimation3.webm", "/videos/3Danimation.webm"]
   },
   {
     title: "CGI Content",
@@ -43,7 +43,7 @@ const serviceBlocks = [
     description: "Photorealistic renders to enhance product appeal and realism.",
     brief: "Use digital artistry to craft ultra‑realistic visuals for advertising and storytelling.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/cgi1.webp", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/cgi1.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/cgi2.webp"]
+    media: ["/images/cgi1.webp", "/videos/cgi1.webm", "/images/cgi2.webp"]
   },
   {
     title: "Anamorphic Design",
@@ -51,7 +51,7 @@ const serviceBlocks = [
     description: "Immersive illusions tailored for large‑scale DOOH.",
     brief: "Create mind‑bending 3‑D illusions that mesmerize viewers on large digital screens.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/anamorphic3.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/anamorphic2.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/anamorphic1.webm"]
+    media: ["/videos/anamorphic3.webm", "/videos/anamorphic2.webm", "/videos/anamorphic1.webm"]
   },
   {
     title: "Product Application Videos",
@@ -59,7 +59,7 @@ const serviceBlocks = [
     description: "Showcase your product in real‑world use cases.",
     brief: "Highlight the value and versatility of your product through engaging demo videos.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/productapp1.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/productapp2.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/productapp3.webm"]
+    media: ["/videos/productapp1.webm", "/videos/productapp2.webm", "/videos/productapp3.webm"]
   },
   {
     title: "Digi-Greetings",
@@ -67,7 +67,7 @@ const serviceBlocks = [
     description: "Festive and brand‑specific animated greetings.",
     brief: "Celebrate special moments with beautifully animated greeting messages tailored to your brand.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/digigreeting1.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/digigreeting2.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/digigreeting3.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/digigreeting4.webm"]
+    media: ["/videos/digigreeting1.webm", "/videos/digigreeting2.webm", "/videos/digigreeting3.webm", "/videos/digigreeting4.webm"]
   },
   {
     title: "Corporate Shoots",
@@ -75,7 +75,7 @@ const serviceBlocks = [
     description: "Professional shoots for business branding and communication.",
     brief: "Crisp, high‑quality visuals that represent your corporate identity with professionalism.",
     type: "video",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/corporate1.webm", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/corporate2.webm"]
+    media: ["/videos/corporate1.webm", "/videos/corporate2.webm"]
   },
   {
     title: "Product Shoots",
@@ -83,12 +83,12 @@ const serviceBlocks = [
     description: "Capture your product from its best angle with studio‑quality images.",
     brief: "Visual storytelling that puts your product in the spotlight with stunning photography.",
     type: "image",
-    media: ["https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/product1.webp", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/product2.webp", "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/product3.webp"]
+    media: ["/images/product1.webp", "/images/product2.webp", "/images/product3.webp"]
   }
 ];
 
 // Optimized Lazy Video Component
-const LazyVideo = ({ src, aspect = 'video', poster = "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/poster-placeholder.webp" }) => {
+const LazyVideo = ({ src, aspect = 'video', poster = "/images/poster-placeholder.webp" }) => {
   const videoRef = useRef(null);
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -140,7 +140,7 @@ export default function ContentCreationPage() {
   return (
     <>
       <Head>
-        <link rel="preload" as="video" href="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/hero-bg.webm" type="video/webm" />
+        <link rel="preload" as="video" href="/videos/hero-bg.webm" type="video/webm" />
       </Head>
 
       <Header />
@@ -149,7 +149,7 @@ export default function ContentCreationPage() {
         {/* Hero Section */}
         <section className="relative py-32 px-6 text-center text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <LazyVideo src="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/hero-bg.webm" aspect="video" />
+            <LazyVideo src="/videos/hero-bg.webm" aspect="video" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#00acd7]/60 to-[#341f9b]/70" />
           </div>
           <motion.div
@@ -215,7 +215,7 @@ export default function ContentCreationPage() {
                   <div key={i} className="relative rounded-xl overflow-hidden shadow-md">
                     <Suspense fallback={<div className="p-4 text-center">Loading...</div>}>
                       {src.endsWith('.webm') ? (
-                        <LazyVideo src={src} aspect={service.title === "Digi-Greetings" ? "square" : "video"} poster="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/poster-placeholder.webp" />
+                        <LazyVideo src={src} aspect={service.title === "Digi-Greetings" ? "square" : "video"} poster="/images/poster-placeholder.webp" />
                       ) : (
                         <Image
                           src={src}
@@ -228,7 +228,7 @@ export default function ContentCreationPage() {
                           loading="lazy"
                           decoding="async"
                           placeholder="blur"
-                          blurDataURL="https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/placeholder.webp"
+                          blurDataURL="/images/placeholder.webp"
                         />
                       )}
                     </Suspense>
@@ -253,7 +253,7 @@ export default function ContentCreationPage() {
                         <Suspense fallback={<div className="flex items-center justify-center h-full">
                           <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white" />
                         </div>}>
-                          <ThreeDViewer modelUrl={`https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/assets/models/${model}`} />
+                          <ThreeDViewer modelUrl={`/assets/models/${model}`} />
                         </Suspense>
                       </div>
                     ))}

@@ -62,3 +62,10 @@ body {
 .custom-blur-10 {
   filter: blur(2px);
 }
+
+@font-face {
+  font-family: 'YourFont';
+  src: url('/fonts/your-font.woff2') format('woff2');
+  font-display: swap;
+  /* Avoid delay */
+}
