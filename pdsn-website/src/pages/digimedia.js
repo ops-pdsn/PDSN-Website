@@ -1,6 +1,7 @@
 // pages/digimedia.js
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductDetailView from '../components/ProductDetailView';
@@ -243,12 +244,12 @@ export default function DigiMedia() {
                     Ready to elevate your DOOH presence?
                 </span>
                 <div className="space-x-4">
-                    <a
+                    <Link
                         href="/contact"
                         className="inline-block px-5 py-3 bg-white text-blue-600 font-semibold rounded shadow hover:bg-gray-100 transition"
                     >
                         Request a Quote
-                    </a>
+                    </Link>
                 </div>
             </div>
 
