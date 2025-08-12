@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent zoom/pinch from affecting canvas gestures */
+canvas {
+  touch-action: none;
+}
+
+/* Slider Base Style */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #ffffff40;
+  border-radius: 2px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Thumb Style: WebKit */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 0 2px #00000050;
+  cursor: pointer;
+  margin-top: -6px;
+  /* aligns thumb vertically */
+}
+
+/* Thumb Style: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 0 2px #00000050;
+  cursor: pointer;
+}
+
+/* Track Style: Firefox */
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: #ffffff40;
+  border-radius: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.custom-blur-10 {
+  filter: blur(2px);
+}
