@@ -1,0 +1,86 @@
+export const caseStudiesData = [
+<<<<<<< HEAD:pdsn-website/src/lib/caseStudiesData.js.bak
+
+  {
+    title: "Cosmos × IMTEX 2025",
+    slug: "cosmos-imtex-2025",
+    image: "/images/case-studies/cosmos.webp",
+=======
+  {
+    title: "New India Assurance – Head Office",
+    slug: "new-india-assurance",
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/cosmos.webp",
+    summary: "New India Assurance",
+    result: " 🎯 Impactful Results",
+    category: "DOOH"
+  },
+  {
+    title: "Cosmos × IMTEX 2025",
+    slug: "cosmos-imtex-2025",
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/cosmos.webp",
+>>>>>>> ac341ae226a36e46e4547bfa876aa58dcb41e8dd:src/lib/caseStudiesData.js.bak
+    summary: "L-shaped anamorphic LED screen brought engineering to life in 3D.",
+    result: "🚀 Showstopper at IMTEX 2025",
+    category: "DOOH"
+  },
+  {
+    title: "Ajanta Pharma × Yashobhoomi",
+    slug: "ajanta-pharma",
+<<<<<<< HEAD:pdsn-website/src/lib/caseStudiesData.js.bak
+    image: "/images/case-studies/ajanta.webp",
+=======
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/ajanta.webp",
+>>>>>>> ac341ae226a36e46e4547bfa876aa58dcb41e8dd:src/lib/caseStudiesData.js.bak
+    summary: "Immersive 3D illusion campaign turning heads at a pharma summit.",
+    result: "✨ Premium brand experience",
+    category: "DOOH"
+  },
+  {
+    title: "NBC Bearings × Multi-Vehicle Showcase",
+    slug: "nbc-bearings",
+<<<<<<< HEAD:pdsn-website/src/lib/caseStudiesData.js.bak
+    image: "/images/case-studies/nbc.webp",
+=======
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/nbc.webp",
+>>>>>>> ac341ae226a36e46e4547bfa876aa58dcb41e8dd:src/lib/caseStudiesData.js.bak
+    summary: "Cross-industry 3D narrative showcasing bearings in motion.",
+    result: "🏆 Tech + storytelling fusion",
+    category: "DOOH"
+  },
+  {
+    title: "Bank of India × Tata Marathon",
+    slug: "bank-of-india",
+<<<<<<< HEAD:pdsn-website/src/lib/caseStudiesData.js.bak
+    image: "/images/case-studies/BOI.webp",
+=======
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/BOI.webp",
+>>>>>>> ac341ae226a36e46e4547bfa876aa58dcb41e8dd:src/lib/caseStudiesData.js.bak
+    summary: "Emotive corporate film captured during India’s biggest marathon.",
+    result: "🎥 Powerful internal branding",
+    category: "DOOH"
+  },
+  {
+    title: "Agrasen × Detroit Airport",
+    slug: "agrasen",
+<<<<<<< HEAD:pdsn-website/src/lib/caseStudiesData.js.bak
+    image: "/images/case-studies/agrasen.webp",
+=======
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/agrasen.webp",
+>>>>>>> ac341ae226a36e46e4547bfa876aa58dcb41e8dd:src/lib/caseStudiesData.js.bak
+    summary: "U.S. airport DOOH placements for global visibility.",
+    result: "🌎 Cross-border brand push",
+    category: "Hyperlocal"
+  },
+  {
+    title: "Solution One ERP × Pin-Code Targeting",
+    slug: "solution-one-erp",
+<<<<<<< HEAD:pdsn-website/src/lib/caseStudiesData.js.bak
+    image: "/images/case-studies/solutionone.webp",
+=======
+    image: "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/case-studies/solutionone.webp",
+>>>>>>> ac341ae226a36e46e4547bfa876aa58dcb41e8dd:src/lib/caseStudiesData.js.bak
+    summary: "Precision media in Pune’s Bhosari industrial belt.",
+    result: "🎯 Laser-targeted impressions",
+    category: "Hyperlocal"
+  }
+];

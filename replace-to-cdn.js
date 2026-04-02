@@ -1,0 +1,48 @@
+// replace-to-cdn.js
+import fs from 'fs';
+import path from 'path';
+
+const CDN_PREFIX = 'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main';
+const TARGET_DIR = '.'; // current folder // Adjust to your source directory if needed
+
+const FILE_TYPES = ['.tsx', '.jsx', '.js', '.html'];
+const PATHS_TO_REPLACE = ['https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/', 'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/videos/', 'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/logos/', 'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/assets/', 'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/blogIMG/', 'https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/team/'];
+
+function replacePathsInFile(filePath) {
+    const original = fs.readFileSync(filePath, 'utf8');
+    let modified = original;
+
+    let replaced = false;
+
+    PATHS_TO_REPLACE.forEach(pathStart => {
+        const regex = new RegExp(`(["'\`])${pathStart}`, 'g');
+        const replacement = `$1${CDN_PREFIX}${pathStart}`;
+        if (regex.test(modified)) {
+            replaced = true;
+            modified = modified.replace(regex, replacement);
+        }
+    });
+
+    if (replaced) {
+        fs.copyFileSync(filePath, filePath + '.bak'); // backup
+        fs.writeFileSync(filePath, modified, 'utf8');
+        console.log(`✅ Replaced and updated: ${filePath}`);
+    }
+}
+
+function scanDirectory(dir) {
+    fs.readdirSync(dir).forEach(file => {
+        const fullPath = path.join(dir, file);
+        const stat = fs.statSync(fullPath);
+
+        if (stat.isDirectory()) {
+            scanDirectory(fullPath);
+        } else if (FILE_TYPES.includes(path.extname(fullPath))) {
+            replacePathsInFile(fullPath);
+        }
+    });
+}
+
+console.log(`🚀 Starting CDN replacement in ${TARGET_DIR}...\n`);
+scanDirectory(TARGET_DIR);
+console.log('\n✅ All done. Check your files!');

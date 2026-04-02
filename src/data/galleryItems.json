@@ -1,0 +1,65 @@
+[
+  {
+    "id": "gi-001",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/coporate1.webp",
+    "category": "Metro & Transit Branding",
+    "title": "Aqua Line Metro — Full Station Brand Experience",
+    "description": "An end-to-end transit branding execution across key Aqua Line metro stations. Integrated digital screens, PSDs, and display units were conceptualised, fabricated, and installed by our team.",
+    "year": "2024",
+    "featured": true
+  },
+  {
+    "id": "gi-002",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (15).webp",
+    "category": "Corporate Branding",
+    "title": "Premium Office Identity Installation",
+    "description": "Designed and installed premium acrylic signage, wall murals, and interior brand elements across a corporate campus. Every touchpoint was aligned to reinforce workplace identity.",
+    "year": "2024",
+    "featured": false
+  },
+  {
+    "id": "gi-003",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (12).webp",
+    "category": "Campaign Assets",
+    "title": "Brand Activation — Mascot & Standee Suite",
+    "description": "Created a full suite of campaign-ready mascot cutouts, life-size standees, and engagement props for an on-ground brand activation.",
+    "year": "2024",
+    "featured": false
+  },
+  {
+    "id": "gi-004",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/outdoor2.webp",
+    "category": "Outdoor Branding",
+    "title": "Large-Format Outdoor Brand Wrap",
+    "description": "Executed a large-format outdoor branding project spanning multiple facades. High-durability vinyl wraps with precision-cut finishes ensured maximum visual impact.",
+    "year": "2023",
+    "featured": false
+  },
+  {
+    "id": "gi-005",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (2).webp",
+    "category": "Custom Collaterals",
+    "title": "Corporate Memento & Gifting Collection",
+    "description": "Conceptualised and produced a bespoke range of branded mementos and corporate gifting items aligned to the client's visual identity.",
+    "year": "2023",
+    "featured": false
+  },
+  {
+    "id": "gi-006",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (4).webp",
+    "category": "Office Decor",
+    "title": "Workspace Environment Branding",
+    "description": "Delivered a full office environment branding project — wall graphics, ceiling installations, and themed zones that reflect the brand's ethos.",
+    "year": "2023",
+    "featured": false
+  },
+  {
+    "id": "gi-007",
+    "image": "https://cdn.jsdelivr.net/gh/ops-pdsn/cdn-assets@main/images/image (5).webp",
+    "category": "Transit Branding",
+    "title": "Station Pillar & Concourse Wrap",
+    "description": "Wrapped structural pillars and concourse walls with high-resolution brand graphics at a busy transit hub.",
+    "year": "2023",
+    "featured": false
+  }
+]

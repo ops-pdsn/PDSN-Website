@@ -1,0 +1,69 @@
+"use client";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
+import { useRef, useState, useEffect } from "react";
+
+function Model({ url, scale }) {
+  const { scene } = useGLTF(url);
+  const ref = useRef();
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.scale.set(scale, scale, scale);
+    }
+  }, [scale]);
+
+  return <primitive ref={ref} object={scene} position={[0, -1, 0]} rotation={[0, Math.PI / 4, 0]} />;
+}
+
+export default function ThreeDViewer({ modelUrl }) {
+  const [scale, setScale] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return (
+    <div className="relative w-full h-[400px] sm:h-[600px] bg-[#181a2a] rounded-xl overflow-hidden">
+      <Canvas
+        className="!absolute inset-0"
+        camera={{ position: [0, 2, 5], fov: 45 }}
+      >
+        <ambientLight intensity={0.6} />
+        <directionalLight position={[5, 5, 5]} intensity={1.2} />
+        <Environment preset="sunset" />
+        <Model url={modelUrl} scale={scale} />
+        <OrbitControls
+          enableZoom
+          enableRotate
+          enablePan
+          minDistance={3}
+          maxDistance={8}
+          target={[0, -0.5, 0]}
+        />
+      </Canvas>
+
+      {/* Zoom Control Bar - Always Bottom */}
+      <div className="absolute bottom-4 inset-x-0 z-20 flex justify-center pointer-events-none">
+        <div className="flex items-center gap-3 px-4 py-2 bg-black/50 backdrop-blur-md rounded-lg text-white max-w-md w-[90%] pointer-events-auto">
+          <span className="text-sm hidden sm:inline">Zoom</span>
+          <input
+            type="range"
+            min="1"
+            max="3"
+            step="0.1"
+            value={scale}
+            onChange={(e) => setScale(parseFloat(e.target.value))}
+            className="flex-1 accent-blue-400"
+          />
+          <span className="text-sm min-w-[40px] text-right">{scale.toFixed(1)}x</span>
+        </div>
+      </div>
+    </div>
+  );
+}
