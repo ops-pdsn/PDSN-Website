@@ -61,7 +61,10 @@ export default function DynamicCaseStudy({ study: initialStudy }) {
 export async function getStaticPaths() {
   let slugs = [];
   try {
-    const data = require('../../data/caseStudies.json');
+    const fs = (await import('fs')).default;
+    const path = (await import('path')).default;
+    const file = path.join(process.cwd(), 'src', 'data', 'caseStudies.json');
+    const data = JSON.parse(fs.readFileSync(file, 'utf8'));
     slugs = data.map(s => s.slug).filter(Boolean);
   } catch {}
   return {
@@ -73,7 +76,10 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   let study = null;
   try {
-    const data = require('../../data/caseStudies.json');
+    const fs = (await import('fs')).default;
+    const path = (await import('path')).default;
+    const file = path.join(process.cwd(), 'src', 'data', 'caseStudies.json');
+    const data = JSON.parse(fs.readFileSync(file, 'utf8'));
     study = data.find(s => s.slug === params.slug) || null;
   } catch {}
   if (!study) return { notFound: true };
