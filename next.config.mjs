@@ -17,9 +17,6 @@ const nextConfig = {
     ],
   },
 
-  turbopack: {
-    root: new URL('.', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1'),
-  },
 };
 
 export default nextConfig;
