@@ -16,6 +16,10 @@ const nextConfig = {
       { protocol: 'https', hostname: 'raw.githubusercontent.com' },
     ],
   },
+
+  turbopack: {
+    root: new URL('.', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1'),
+  },
 };
 
 export default nextConfig;

@@ -58,6 +58,12 @@ export default function DynamicCaseStudy({ study: initialStudy }) {
   );
 }
 
+// These slugs have dedicated static .js pages — exclude them from the dynamic route
+const STATIC_PAGE_SLUGS = new Set([
+  'cosmos-imtex-2025', 'nia', 'ajanta-pharma', 'nbc-bearings',
+  'bank-of-india', 'agrasen', 'solution-one-erp', 'hyperlocalcasestudy',
+]);
+
 export async function getStaticPaths() {
   let slugs = [];
   try {
@@ -65,7 +71,8 @@ export async function getStaticPaths() {
     const path = (await import('path')).default;
     const file = path.join(process.cwd(), 'src', 'data', 'caseStudies.json');
     const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-    slugs = data.map(s => s.slug).filter(Boolean);
+    // Only generate paths for slugs that don't already have a dedicated page file
+    slugs = data.map(s => s.slug).filter(s => s && !STATIC_PAGE_SLUGS.has(s));
   } catch {}
   return {
     paths: slugs.map(slug => ({ params: { slug } })),
